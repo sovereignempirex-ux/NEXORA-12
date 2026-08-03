@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="description" content="NEXORA - منصة برمجة وأنمي ومعلومات عامة">
+    <title>◇ NEXORA ◇</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-gradient"></div>
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◇</span>
+                <span class="logo-text">NEXORA</span>
+                <span class="logo-icon">◇</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-link">عن المنصة</a>
+                <a href="#services" class="nav-link">الخدمات</a>
+                <a href="#links" class="nav-link">الروابط</a>
+                <a href="#contact" class="nav-link">تواصل</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge glass">
+                <i class="fas fa-star"></i>
+                <span>منصة متكاملة</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="glow-text">◇</span>
+                <span class="gradient-text">NEXORA</span>
+                <span class="glow-text">◇</span>
+            </h1>
+            <p class="hero-subtitle">برمجة · أنمي · معلومات عامة</p>
+            <p class="hero-desc">منصة عربية متكاملة تجمع بين عالم البرمجة والتقنية وعالم الأنمي والثقافة العامة في مكان واحد</p>
+
+            <!-- Search Bar -->
+            <div class="search-container glass">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="mainSearch" placeholder="ابحث في المنصة... (برمجة، أنمي، معلومات...)" autocomplete="off">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+
+            <div class="search-tags">
+                <span class="tag" data-search="برمجة"><i class="fas fa-code"></i> برمجة</span>
+                <span class="tag" data-search="أنمي"><i class="fas fa-tv"></i> أنمي</span>
+                <span class="tag" data-search="معلومات"><i class="fas fa-lightbulb"></i> معلومات</span>
+                <span class="tag" data-search="تعلم"><i class="fas fa-graduation-cap"></i> تعلم</span>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary glass">
+                    <i class="fas fa-rocket"></i>
+                    اكتشف المزيد
+                </a>
+                <a href="https://chat.whatsapp.com/Feb9W0vSPKrCxK9zAmWksQ" target="_blank" class="btn btn-secondary glass">
+                    <i class="fab fa-whatsapp"></i>
+                    انضم لنا
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-frame glass">
+                <img src="https://i.postimg.cc/PJ1xTdxW/Whats-App-Image-2026-08-01-at-22-22-56.jpg" alt="NEXORA" id="heroImg">
+                <div class="image-glow"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>اسحب للأسفل</span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card glass" data-aos="fade-up">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-number" data-target="5000">0</div>
+                <div class="stat-label">عضو نشط</div>
+            </div>
+            <div class="stat-card glass" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-icon"><i class="fas fa-code"></i></div>
+                <div class="stat-number" data-target="120">0</div>
+                <div class="stat-label">مشروع برمجي</div>
+            </div>
+            <div class="stat-card glass" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-icon"><i class="fas fa-tv"></i></div>
+                <div class="stat-number" data-target="350">0</div>
+                <div class="stat-label">حلقة أنمي</div>
+            </div>
+            <div class="stat-card glass" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-icon"><i class="fas fa-book"></i></div>
+                <div class="stat-number" data-target="1000">0</div>
+                <div class="stat-label">معلومة مفيدة</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-tag glass">من نحن</span>
+            <h2 class="section-title">عن <span class="gradient-text">NEXORA</span></h2>
+            <p class="section-desc">منصة عربية شاملة تجمع بين التقنية والترفيه والمعرفة</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card glass">
+                <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>البرمجة</h3>
+                <p>تعلم البرمجة من الصفر، مشاريع عملية، حلول تقنية، وأحدث التقنيات في عالم التطوير</p>
+                <div class="card-tags">
+                    <span>Web Dev</span>
+                    <span>Mobile</span>
+                    <span>AI</span>
+                </div>
+            </div>
+
+            <div class="about-card glass featured">
+                <div class="card-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <h3>الأنمي</h3>
+                <p>عالم الأنمي الياباني بكل تفاصيله، مراجعات، توصيات، أخبار، ومجتمع عربي متحمس</p>
+                <div class="card-tags">
+                    <span>Shonen</span>
+                    <span>Seinen</span>
+                    <span>Isekai</span>
+                </div>
+            </div>
+
+            <div class="about-card glass">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>معلومات عامة</h3>
+                <p>معرفة متنوعة تغطي العلوم، التاريخ، الفلسفة، والثقافة العامة بأسلوب ممتع</p>
+                <div class="card-tags">
+                    <span>Science</span>
+                    <span>History</span>
+                    <span>Tech</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="section-tag glass">خدماتنا</span>
+            <h2 class="section-title">ماذا نقدم <span class="gradient-text">لك</span></h2>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+            <!-- Services loaded from DB -->
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section" id="searchResultsSection" style="display:none;">
+        <div class="section-header">
+            <span class="section-tag glass">نتائج البحث</span>
+            <h2 class="section-title">نتائج البحث عن: <span class="gradient-text" id="searchQuery"></span></h2>
+        </div>
+        <div class="search-results-grid" id="searchResultsGrid"></div>
+        <button class="btn btn-secondary glass" id="clearSearch">
+            <i class="fas fa-times"></i> مسح البحث
+        </button>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links" class="links-section">
+        <div class="section-header">
+            <span class="section-tag glass">تواصل معنا</span>
+            <h2 class="section-title">روابط <span class="gradient-text">المنصة</span></h2>
+        </div>
+
+        <div class="links-grid">
+            <a href="https://nexora.netlify.app" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #00d4aa;">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="link-info">
+                    <h3>الموقع الرسمي</h3>
+                    <p>nexora.netlify.app</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="https://nexora.vercel.app" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #6366f1;">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="link-info">
+                    <h3>الموقع البديل</h3>
+                    <p>nexora.vercel.app</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="https://chat.whatsapp.com/Feb9W0vSPKrCxK9zAmWksQ" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #25d366;">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="link-info">
+                    <h3>مجموعة الواتساب</h3>
+                    <p>انضم للمجتمع</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="https://whatsapp.com/channel/0029VbDemHOLo4hoUh99rj31" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #128c7e;">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="link-info">
+                    <h3>قناة الواتساب</h3>
+                    <p>تابع آخر الأخبار</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="https://discord.gg/HC2wSQpru" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #5865f2;">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="link-info">
+                    <h3>سيرفر الديسكورد</h3>
+                    <p>انضم للسيرفر</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@nexora5105" target="_blank" class="link-card glass">
+                <div class="link-icon" style="--color: #ff0050;">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="link-info">
+                    <h3>تيك توك</h3>
+                    <p>@nexora5105</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+
+            <a href="mailto:n65750588@gmail.com" class="link-card glass">
+                <div class="link-icon" style="--color: #ea4335;">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="link-info">
+                    <h3>البريد الإلكتروني</h3>
+                    <p>n65750588@gmail.com</p>
+                </div>
+                <i class="fas fa-external-link-alt link-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-tag glass">تواصل</span>
+            <h2 class="section-title">راسل <span class="gradient-text">NEXORA</span></h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-form glass">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> الاسم</label>
+                        <input type="text" id="contactName" placeholder="اسمك الكريم" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                        <input type="email" id="contactEmail" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> الموضوع</label>
+                        <select id="contactSubject">
+                            <option value="general">استفسار عام</option>
+                            <option value="programming">برمجة</option>
+                            <option value="anime">أنمي</option>
+                            <option value="suggestion">اقتراح</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-comment"></i> الرسالة</label>
+                        <textarea id="contactMessage" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary glass">
+                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                    </button>
+                </form>
+                <div class="form-status" id="formStatus"></div>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-card glass">
+                    <i class="fas fa-clock"></i>
+                    <h3>أوقات الرد</h3>
+                    <p>نرد على جميع الرسائل خلال 24 ساعة</p>
+                </div>
+                <div class="info-card glass">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>خصوصيتك</h3>
+                    <p>بياناتك محمية ومشفرة</p>
+                </div>
+                <div class="info-card glass">
+                    <i class="fas fa-heart"></i>
+                    <h3>نحن هنا من أجلك</h3>
+                    <p>فريق دعم متكامل جاهز للمساعدة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">◇</span>
+                    <span class="logo-text">NEXORA</span>
+                    <span class="logo-icon">◇</span>
+                </div>
+                <p>منصة عربية متكاملة للبرمجة والأنمي والمعلومات العامة</p>
+                <div class="footer-social">
+                    <a href="https://chat.whatsapp.com/Feb9W0vSPKrCxK9zAmWksQ" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://discord.gg/HC2wSQpru" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.tiktok.com/@nexora5105" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:n65750588@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <a href="#home">الرئيسية</a>
+                <a href="#about">عن المنصة</a>
+                <a href="#services">الخدمات</a>
+                <a href="#links">الروابط</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>الخدمات</h4>
+                <a href="#services">برمجة</a>
+                <a href="#services">أنمي</a>
+                <a href="#services">معلومات عامة</a>
+                <a href="#contact">تواصل</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>◇ NEXORA ◇ &copy; 2026 - جميع الحقوق محفوظة</p>
+            <p class="footer-credit">صُنع بـ <i class="fas fa-heart"></i> لمجتمع NEXORA</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Install PWA Button -->
+    <button class="install-pwa glass" id="installPwa" style="display:none;">
+        <i class="fas fa-download"></i>
+        <span>تثبيت التطبيق</span>
+    </button>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
