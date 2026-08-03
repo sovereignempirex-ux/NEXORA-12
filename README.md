@@ -42,7 +42,7 @@ nexora-website/
 ## 🌐 الروابط
 
 - الموقع: [nexora.netlify.app](https://nexora.netlify.app)
-- البديل: [nexora.vercel.app](https://nexora.vercel.app)
+- البديل: [nexora.vercel.app](https://nexora-yx2o.vercel.app/)
 - واتساب: [المجموعة](https://chat.whatsapp.com/Feb9W0vSPKrCxK9zAmWksQ)
 - قناة واتساب: [القناة](https://whatsapp.com/channel/0029VbDemHOLo4hoUh99rj31)
 - ديسكورد: [السيرفر](https://discord.gg/HC2wSQpru)
